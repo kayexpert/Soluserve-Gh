@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LightGallery.js Example</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-autoplay.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-comments.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-rotate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-share.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css">
+    </head>
+
+    <body>
+        <h1>LightGallery.js Example</h1>
+
+        <div id="gallery">
+            <a href="https://picsum.photos/id/1018/1000/600" data-lg-size="1000-600"
+                data-lg-thumbnail="https://picsum.photos/id/1018/250/150">
+                <img src="https://picsum.photos/id/1018/250/150">
+            </a>
+            <a href="https://picsum.photos/id/102/1000/600" data-lg-size="1000-600"
+                data-lg-thumbnail="https://picsum.photos/id/102/250/150">
+                <img src="https://picsum.photos/id/102/250/150">
+            </a>
+            <a href="https://picsum.photos/id/1005/1000/600" data-lg-size="1000-600"
+                data-lg-thumbnail="https://picsum.photos/id/1005/250/150">
+                <img src="https://picsum.photos/id/1005/250/150">
+            </a>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/rotate/lg-rotate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/share/lg-share.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+        <script>
+        lightGallery(document.getElementById('gallery'), {
+            plugins: [lgThumbnail, lgZoom, lgFullscreen, lgShare, lgRotate, lgAutoplay],
+            download: true,
+            controls: true,
+            thumbWidth: 100,
+            thumbHeight: 100
+        });
+    </script>
+    </body>
+
+</html>
