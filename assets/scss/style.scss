@@ -6,8 +6,11 @@
 @import "./buttons-forms.scss";
 
 #hero-section {
+  height: 80vh;
   @include bg_img(url(../img/bg-img.jpg));
-  height: 65vh;
+  @include breakpoint(sm_lg) {
+    height: 60vh;
+  }
 
   .content {
     max-width: 750px;
@@ -43,7 +46,7 @@
       display: flex;
       justify-content: flex-end;
       img {
-        width: 85%;
+        // width: 85%;
         height: auto;
       }
     }
@@ -181,6 +184,9 @@
       align-items: center;
       width: 200px;
     }
+    .owl-dots {
+      display: none;
+    }
   }
 }
 
@@ -248,6 +254,17 @@
       padding-bottom: 20px;
     }
   }
+}
+
+#Esg-policy {
+  li {
+    padding-bottom: 12px;
+    i {
+      color: $secondaryColor;
+      font-weight: ;
+    }
+  }
+  font-size: 18px;
 }
 
 // Careers

@@ -11,6 +11,10 @@
   justify-content: center;
   transition: 0.5s;
 
+  // .left {
+  //   background: rgba(0, 0, 0, 0.403);
+  // }
+
   &.scrolled {
     background: $primaryColor_B;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.262);

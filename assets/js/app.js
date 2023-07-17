@@ -202,7 +202,8 @@ $(".partners-slide").owlCarousel({
   autoplay: true,
   loop: true,
   margin: 15,
-  // nav: false,
+  nav: false,
+  dot: false,
   autoplayHoverPause: true,
   responsive: {
     0: {

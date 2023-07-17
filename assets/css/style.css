@@ -505,11 +505,16 @@ button {
 }
 
 #hero-section {
+  height: 80vh;
   background: url(../img/bg-img.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 65vh;
+}
+@media only screen and (max-width: 992px) {
+  #hero-section {
+    height: 60vh;
+  }
 }
 #hero-section .content {
   max-width: 750px;
@@ -546,7 +551,6 @@ button {
     justify-content: flex-end;
   }
   #about .cert img {
-    width: 85%;
     height: auto;
   }
 }
@@ -676,6 +680,9 @@ button {
   align-items: center;
   width: 200px;
 }
+#partners .wrapper .owl-dots {
+  display: none;
+}
 
 .about-bc {
   background: url(../img/about-Bc.png);
@@ -740,6 +747,17 @@ button {
 .who-we-are .sec-4 li {
   font-size: 15px;
   padding-bottom: 20px;
+}
+
+#Esg-policy {
+  font-size: 18px;
+}
+#Esg-policy li {
+  padding-bottom: 12px;
+}
+#Esg-policy li i {
+  color: #feb900;
+  font-weight: bolder;
 }
 
 .careers-bc {
