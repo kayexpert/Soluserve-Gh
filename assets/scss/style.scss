@@ -257,11 +257,15 @@
 }
 
 #Esg-policy {
+  .sec_title {
+    i {
+      font-size: 25px !important;
+    }
+  }
   li {
     padding-bottom: 12px;
     i {
       color: $secondaryColor;
-      font-weight: ;
     }
   }
   font-size: 18px;
@@ -350,4 +354,55 @@
 .gallery-item {
   width: 200px;
   padding: 5px;
+}
+
+.services {
+  .sec_title {
+    color: $secondaryColor;
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 20px;
+      margin-right: 8px;
+    }
+  }
+  #jv-pat {
+    .sec_title {
+      color: $primaryColor;
+    }
+  }
+  #work-hist,
+  #Well-prod-serv {
+    @include bg_img(url("../img/blue-bg-2.png"));
+    p,
+    li {
+      color: $whiteColor;
+    }
+  }
+
+  .minLab-ser {
+    @include bg_img(url("../img/plain-bg.png"));
+    background-color: rgba(207, 207, 207, 0.685);
+  }
+
+  #Oil-serv {
+    .logo {
+      max-width: 300px;
+      margin: 0 auto 10px;
+    }
+    .sec_title {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .tools {
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+}
+.media {
+  img {
+    border-radius: 10px;
+  }
 }

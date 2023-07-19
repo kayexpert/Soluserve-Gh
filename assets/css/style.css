@@ -389,6 +389,9 @@ img {
   content: "";
   background-color: rgba(13, 39, 67, 0.7215686275);
 }
+#footer .col_m {
+  z-index: 999;
+}
 #footer h3 {
   color: #feb900;
   text-transform: capitalize;
@@ -752,12 +755,14 @@ button {
 #Esg-policy {
   font-size: 18px;
 }
+#Esg-policy .sec_title i {
+  font-size: 25px !important;
+}
 #Esg-policy li {
   padding-bottom: 12px;
 }
 #Esg-policy li i {
   color: #feb900;
-  font-weight: bolder;
 }
 
 .careers-bc {
@@ -842,4 +847,54 @@ button {
 .gallery-item {
   width: 200px;
   padding: 5px;
+}
+
+.services .sec_title {
+  color: #feb900;
+  display: flex;
+  align-items: center;
+}
+.services .sec_title i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+.services #jv-pat .sec_title {
+  color: #0a315e;
+}
+.services #work-hist,
+.services #Well-prod-serv {
+  background: url("../img/blue-bg-2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.services #work-hist p,
+.services #work-hist li,
+.services #Well-prod-serv p,
+.services #Well-prod-serv li {
+  color: #fff;
+}
+.services .minLab-ser {
+  background: url("../img/plain-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(207, 207, 207, 0.685);
+}
+.services #Oil-serv .logo {
+  max-width: 300px;
+  margin: 0 auto 10px;
+}
+.services #Oil-serv .sec_title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.services #Oil-serv .tools {
+  display: flex;
+  margin: 0 auto;
+}
+
+.media img {
+  border-radius: 10px;
 }

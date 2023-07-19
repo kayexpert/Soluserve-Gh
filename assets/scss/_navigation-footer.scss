@@ -293,7 +293,9 @@
 
 #footer {
   @include bg_img_color(url("../img/bg-img.jpg"), #0d2743b8);
-
+  .col_m {
+    z-index: 999;
+  }
   h3 {
     color: $secondaryColor;
     text-transform: capitalize;
