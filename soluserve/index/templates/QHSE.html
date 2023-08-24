@@ -1,0 +1,83 @@
+{% extends 'index_base.html' %}
+{% block title %}QHSE{% endblock %}
+
+{% block content %}
+
+        <section class="bedcrump about-bc">
+            <h1 class="mt-5">about</h1>
+            <p class="primary_btn px-5">QHSE</p>
+        </section>
+
+        <div class="qhse">
+            <section id="ims-policy">
+                <div class="container py-5">
+                    <h3 class="sec_title">IMS POLICY</h3>
+                    {% for ims in ims %}
+                    <p>{{ims.description}}</p>
+                    {% endfor %}
+                    {% comment %} <p><strong>SOLUSERV (GH) LIMITED</strong> is fully committed to expediently and pro-actively managing Environmental Protection, Health and Safety. This Policy applies to:</p> {% endcomment %}
+                    {% comment %} <ul class="list-unstyled mb-3">
+                        <li><i class="bi bi-check"></i> All assets owned and operated by <strong>SOLUSERV (GH) LIMITED</strong> ;</li>
+                        <li><i class="bi bi-check"></i> All persons working or operating for or on behalf of <strong>SOLUSERV (GH) LIMITED</strong> including contractors and visitors.</li>
+                    </ul>
+                    <p>The management of <strong>SOLUSERV (GH) LIMITED</strong> is committed to providing a safe workplace for employees and contractors, through the implementation of standards and control that continuously improve the application and performance of the safety management system.</p>
+                    <p><strong>SOLUSERV (GH) LIMITED</strong> provides the oil and gas industry with engineering support, equipment, technology, services and systems which help to protect, preserve and sustain the entire environment around us. <strong>SOLUSERV (GH) LIMITED</strong> activities are planned and performed to minimize environmental discharges and to comply with legislative and contractual requirements.</p>
+                    <p><strong>SOLUSERV (GH) LIMITED</strong> has as part of its business:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check"></i> Set Health, Safety and Environment as a core value for all business activities;
+                            <ul class="list-unstyled ml-4">
+                                <li>-- Assessment of environmental effects before, during and after commencement of all operations.</li>
+                                <li>-- Measurement and reduction of emissions detrimental to the environment.</li>
+                                <li>-- Taking measures to prevent environmental incidents, plan and prepare responses for the minimization of loss should any incidents occur.</li>
+                                <li>-- Regular review of management performance for continuous improvement and reduction of our impact upon the environment.</li>
+                                <li>-- Conservation of resources through where possible, the recycling, reuse and recovery of materials and resources.</li>
+                            </ul>
+                        </li>
+                        <li><i class="bi bi-check"></i> Comply with all relevant Ghana legislation, regulations and other requirements to which <strong>SOLUSERV (GH) LIMITED</strong> subscribes;</li>
+                        <li><i class="bi bi-check"></i> Implement safe working and fitness to work programmes to pursue the goals of no harm to the health or injury to people, no damage to the environment and business assets;</li>
+                        <li><i class="bi bi-check"></i> Minimize adverse impacts on the environment, reduce our Greenhouse Gas Emissions and safeguard natural resources, through the application of Best Available Techniques</li>
+                        <li><i class="bi bi-check"></i> Assess, and manage EH&S risks across the life-cycle for each business activity</li>
+                        <li><i class="bi bi-check"></i> Ensure that sufficient resources are in place to manage EH&S in accordance with this Policy, provide appropriate training to all personnel and include EH&S performance in appraisal of staff and contractors; communicate and engage with key stakeholders, employees and contractors on relevant environmental matters</li>
+                        <li><i class="bi bi-check"></i> Play a leading role in promoting best EH&S practice which will contribute to sustainable development in the Republic of Ghana.</li>
+                    </ul>
+                    <p><strong>SOLUSERV (GH) LIMITED</strong> expects that everyone recognizes their personal responsibility for EH&S and their right to report openly any EH&S issue of concern. In addition everyone is encouraged to intervene in the case of unsafe acts or conditions and polluting circumstances. To ensure we meet these objectives, <strong>SOLUSERV (GH) LIMITED</strong> will consult with, listen to and respond openly to our employees, contractors, regulators,
+                        customers, local communities and other stakeholders.</p>
+                    <p> Responsibility for establishing and implementing this EH&S Policy rests with the Managing Director of <strong>SOLUSERV (GH) LIMITED</strong>.</p>
+                </div> {% endcomment %}
+            </section>
+            <section id="Esg-policy">
+                <div class="container py-5">
+                    <h3 class="sec_title"><i class="bi bi-circle-fill"></i> ENVIRONMENTAL SOCIAL AND GOVERNANCE POLICY</h3>
+                    {% for esg in esg %}
+                    <p>{{esg.description}}</p>
+                    {% endfor %}
+
+                    {% comment %} <ul class="list-unstyled mb-3">
+                        <li><i class="bi bi-check2"></i> As a 100% locally owned Ghanaian Oil and Gas Service Company, whose personnel, associates and shareholders have International and other African experience, Soluserv (GH) Limited (SGL) recognizes the importance of Environmental Social and Governance (ESG) commitment to our success in the oilfield industry.</li>
+                        <li><i class="bi bi-check2"></i>The (ESG) policy is a strategic framework to identify hazards and opportunities for improvement for a safe working culture. The objective is to assess and address challenges in organizational goals and activities.</li>
+                        <li><i class="bi bi-check2"></i>SGL is strongly committed to the highest standards of products and service(s) quality, employee safety in the workplace, employee health and the prevention of damage to the environment at our premises, facilities, those of our clients and societies in which we perform operations. SGL is oriented towards achieving these goals openly and transparently by adhering to the QHSE management and risk assessment fundamentals. It also ensures
+                            customer satisfaction in compliance with the laws and regulations of Ghana.</li>
+                        <li><i class="bi bi-check2"></i>SGL ensures the engineering support, equipment rental and sales, technology, services and systems provided, helps to protect, preserve and sustain the entire environment around us. It also ensures all activities are planned and performed to minimize environmental discharges and to comply with legislative and contractual requirements.</li>
+                        <li><i class="bi bi-check2"></i>SGL ensures the products and services provided by the international service companies we collaborated with, are reliable and can stand the test of time. </li>
+                        <li><i class="bi bi-check2"></i>SGL is committed to training all its employees and ensure professional and managerial skills and motivation and compliance with the ethical principles established in the SGL ESG policy. </li>
+                        <li><i class="bi bi-check2"></i>The policy helps stakeholders understand how our organization manages risks and opportunities related to Environmental, Social, and Governance to attain the below ultimate benefits for business sustainability.
+                            <ul class="list-unstyled ms-3">
+                                <li> -- Create business value.</li>
+                                <li> -- Meet the needs of our customers.</li>
+                                <li> -- Meet investor demand.</li>
+                                <li> -- Attract and engage top talent.</li>
+                                <li> -- Slash business costs.</li>
+                                <li> -- Improve a brand’s reputation.</li>
+                                <li> -- Leverage new opportunities.</li>
+                            </ul>
+
+                        </li>
+
+                    </ul> {% endcomment %}
+
+                </div>
+
+            </section>
+        </div>
+
+{% endblock %}

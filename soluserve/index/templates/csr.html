@@ -1,0 +1,25 @@
+{% extends 'index_base.html' %}
+{% block title %}CSR{% endblock %}
+
+{% block content %}
+
+        <section class="bedcrump about-bc">
+            <h1 class="mt-5">about</h1>
+            <p class="primary_btn px-5">CSR</p>
+        </section>
+
+        <section>
+            {% for csr in csr %}
+            <div class="container py-5">
+                <div class="row justify-content-around">
+                    <div class="col-lg-5 d-flex flex-column justify-content-center">
+                        <h3>{{csr.title}}</h3>
+                        <p>{{csr.description}}</p>
+                    </div>
+                    <div class="col-lg-6 img-bg rounded" style="background-image: url(/media/{{csr.image}}); background-size: contain ;"></div>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+
+{% endblock %}  

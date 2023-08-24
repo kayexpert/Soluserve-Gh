@@ -1,0 +1,90 @@
+{% extends 'index_base.html' %}
+{% block title %}Who We Are{% endblock %}
+
+{% block content %}
+
+        <section class="bedcrump about-bc">
+            <h1 class="mt-5">about</h1>
+        </section>
+
+        <div class="who-we-are">
+            <section class="sec-1">
+                <div class="container py-5">
+                    <h3 class="sec_title text-center">DESCRIPTION AND EXPERIENCE OF TEAM</h3>
+                    {% for wwaa in wwaas %}
+                    <p>{{wwaa.description}}</p>
+                    {% endfor %}
+                    {% comment %} <p> The SGL management comprise of a Managing/Technical Director and two other Directors as well as qualified and experienced Well operations and engineering professionals with the requisite skills to suit the modern, demanding and highly technical Oil & Gas Industry. </p>
+                    <p>Our know-how has been gained through intensive training and work experience with Major Operators as well as Major Service Companies operating in the North Sea, North Africa, West Africa and Countries of the Former Soviet Union including Russia and Kazakhstan.</p>
+                    <p>Soluserv has a warehouse space and a fixed laboratory facility in Sekondi. It also has 4.58acres of land at Shama, about 30 minutes’ drive from Takoradi, and has commenced work on the building of a warehouse, pipe yard and office/laboratory facilities.</p> 
+                    <p>The company has built capacity through the development of a robust Well Operations Management System, Safety Management System and Quality Control and Assurance System. The company’s management systems and procedures have been audited and an Integrated Management System certification, (ISO 9001: 2015 for Quality Management System; ISO 14001:2015 for Environmental Management System; and ISO 45001:2018 for Occupational Health & Safety System) has been issued to guide its operations.</p> {% endcomment %}
+                </div>
+            </section>
+            <section class=" sec-2">
+                <div class="container py-5">
+                    <h3 class="sec_title"><i class="bi bi-circle-fill"></i>SERVICES RENDERED</h3>
+                    {% for sevrend in sevrendz%}
+                    <p><i class="bi bi-caret-right-fill"></i> {{sevrend.description}}</p>
+                    {% endfor %}
+                    {% comment %} <p><i class="bi bi-caret-right-fill"></i> </p>
+                    <p><i class="bi bi-caret-right-fill"></i> SGL provides Custody Transfer Inspection Services in respect of crude oil cargo handling as well as Subsea Sampling Validation and Transfer Services in respect of custody transfer and processing for Tullow’s TEN and JUBILEE Fields. </p>
+                    <p><i class="bi bi-caret-right-fill"></i> Soluserv has provided Third Party Inspector (TPI) services in Takoradi for Foxtrot International. This involves the inspection of completion equipment (permanent and downhole service tools) to confirm it is fit for purpose/has not incurred damage during shipping and transit process. The TPI then witnesses the makeup and test (torque and pressure testing etc.) of all assemblies and service tools as per the relevant service company’s
+                        Service Quality Plan (SCP).
+                        The QA/QC support involves the inspection and witnessing of workshop preparation and testing of completion equipment at the Baker Hughes base in Takoradi. The completion tools once assembled and tested were then transferred to Abidjan for onward shipment of the equipment offshore. The TPI ensures the cargo carriers were fit for purpose and certified with minimum 6 months before expiration.</p>
+                    <p><i class="bi bi-caret-right-fill"></i> Soluserv in recent past performed for Foxtrot international, survey of liquid Mud Plants (LMP) of Halliburton and Schlumberger as well as inspections of their respective warehousing, cementing storage plants and mud and cementing laboratories. </p>
+                    <p class="mb-1"><i class="bi bi-caret-right-fill"></i> Soluserv has been awarded a contract by ENI to undertake “Quality Surveillance and Inspection Services on Well Operations Materials, Services and relevant Tools and Equipment”. The service comprises the following:
+                        <ul class="ml-5">
+                            <li>Ensuring Company’s Contractors performances for compliance to applicable international standards and Company’s Contractor QC plan and Company contractual requirements.</li>
+                            <li>Organizing, supervising and tracking the readiness of rotary down-hole tools and its related equipment. </li>
+                            <li>Serving as a consistent QC enforcement presence working at the front lines such as vendor shops and rig site.</li>
+                        </ul>
+                    </p> {% endcomment %}
+                    {% comment %} <p class="mb-1"><i class="bi bi-caret-right-fill"></i> The specific tools and equipment subject to inspection surveillance, assembly, function testingand repair as applicable include but not limited to:
+                        <ul class="ml-5">
+                            <li>Equipment in Company Warehouse (Wellhead, Casing/Tubing, Completion accessories etc.)</li>
+                            <li>Rental Equipment / Specialty Tools (MWD, LWD, jars, downhole motors, hangers, etc.)</li>
+                            <li>Drill pipe, HWDP, Drill Collars, and other various rig-owned BHA</li>
+                            <li>Handling Equipment</li>
+                            <li>Cementing Equipment</li>
+                            <li>Upper and Lower Completion Running tools</li>
+                            <li>Landing String</li>
+                            <li>Casing and Tubing (as applicable during the manufacturing/refurbishment process). </li>
+                            <li>Coring Equipment</li>
+                            <li>Well Testing Equipment.</li>
+                            <li>Frac equipment</li>
+                            <li>Any others tools to be run in hole.</li>
+                        </ul>
+                    </p> {% endcomment %}
+                </div>
+            </section>
+            <section class=" sec-3">
+                <div class="container py-5">
+                    {% for parttext in parttexts %}
+                    <h3 class="sec_title "><i class="bi bi-circle-fill"></i>{{parttext.title}}</h3>
+                    <p>{{parttext.summary}}</p>
+                    {% endfor %}
+{% comment %} 
+                    <h3 class="sec_title"><i class="bi bi-circle-fill"></i>STRATUM RESERVOIR</h3>
+                    <p>Soluserv (GH) Ltd in collaboration with Stratum Reservoir is able to perform rock & fluid analysis as well as drill cuttings analysis for companies.</p>
+
+                    <h3 class="sec_title"><i class="bi bi-circle-fill"></i>TENDEKA</h3>
+                    <p>SGL is in Collaboration with Tendeka for the provision of Intelligent Completion Tools as well as support companies with Dynamic Downhole Reservoir Management System.
+                    </p> {% endcomment %}
+                </div>
+            </section>
+            <section class=" sec-4">
+                <div class="container py-5">
+                    <h3 class="sec_title text-center text-white">PRODUCTS SUPPLIED</h3>
+                    <p>SGL is in collaboration with the below international service providers for the provision of:
+                        {% for product in productzs%}
+                        <ul class="ml-4">
+                            <li>{{product.description}}</li>
+                        </ul>
+                        {% endfor %}
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+{% endblock %}
